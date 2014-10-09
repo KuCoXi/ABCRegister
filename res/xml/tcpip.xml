@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="tcp_set"
+        android:title="@string/tcp_set" >
+        <EditTextPreference
+            android:defaultValue="@string/tcp_ip_value"
+            android:key="tcp_ip_set"
+            android:title="@string/ip_set"
+            android:widgetLayout="@layout/spin" />
+        <EditTextPreference
+            android:defaultValue="@string/tcp_port_value"
+            android:key="tcp_port_set"
+            android:title="@string/port_set"
+            android:widgetLayout="@layout/spin" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pre_edu_list">
+        <item>研究生及以上</item>
+        <item>大学本科双学历</item>
+       	<item>大学本科</item>
+       	<item>大学专科</item>
+       	<item>高中/中专及以下</item>
+    </string-array>
+    <string-array name="pre_offernum_list">
+        <item>0-1人</item>
+        <item>2-3人</item>
+       	<item>4人</item>
+       	<item>4人以上</item>
+    </string-array>
+    <string-array name="pre_grouptype_list">
+        <item>行政机关、事业团体、社会团体</item>
+        <item>企业</item>
+       	<item>个体</item>
+       	<item>其它</item>
+    </string-array>
+    <string-array name="pre_workyear_list">
+        <item>10年以上</item>
+        <item>6-10年</item>
+       	<item>3-5年</item>
+       	<item>3年以内</item>
+    </string-array>
+    <string-array name="pre_income_list">
+        <item>10000元以下</item>
+        <item>10001-20000元</item>
+       	<item>20001-30000元</item>
+       	<item>30001-40000元</item>
+       	<item>40001-50000元</item>
+       	<item>50001-60000元</item>
+       	<item>60001-70000元</item>
+       	<item>70001-80000元</item>
+       	<item>80001-90000元</item>
+       	<item>90001-100000元</item>
+       	<item>100000元以上</item>
+    </string-array>
+    <string-array name="pre_evincome_list">
+        <item>10000元以下</item>
+        <item>10001-20000元</item>
+       	<item>20001-30000元</item>
+       	<item>30001-40000元</item>
+       	<item>40001-50000元</item>
+       	<item>50001-60000元</item>
+       	<item>60001-70000元</item>
+       	<item>70001-80000元</item>
+       	<item>80001-90000元</item>
+       	<item>90000元以上</item>
+    </string-array>
+    <string-array name="overtime_list_entries">
+        <item>10秒</item>
+        <item>20秒</item>
+        <item>30秒</item>
+        <item>40秒</item>
+    </string-array>
+    <string-array name="overtime_list_entries_values">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+    </string-array>
+    <string-array name="recalltime_list_entries">
+        <item>1次</item>
+        <item>2次</item>
+        <item>3次</item>
+        <item>4次</item>
+    </string-array>
+    <string-array name="recalltime_list_entries_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="net_list_entries">
+        <item>GPRS</item>
+        <item>TCP/IP</item>
+    </string-array>
+    <string-array name="readcardtype_list_entries">
+        <item>新虹伟</item>
+        <item>肯麦思</item>
+    </string-array>
+    <string-array name="jobmsg_list_entries">
+        
+        <item>公务员</item>
+        <item>医生</item>
+        <item>教师</item>
+        <item>律师/会计师/审计师</item>
+        <item>其他事业单位员工</item>
+        <item>国有企业员工</item>
+        <item>三资企业员工</item>
+        <item>民营企业员工</item>
+        <item>军人</item>
+        <item>学生</item>
+        <item>个体/自由职业者</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="jobmsg1_list_entries">
+        
+        <item>公务员</item>
+        <item>医生</item>
+        <item>教师</item>
+        <item>其他事业单位员工</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="jobmsg2_list_entries">
+        <item>军人</item>
+    </string-array>
+    <string-array name="born_list_entries">
+        <item>本地市</item>
+        <item>非本地市</item>
+    </string-array>
+    <string-array name="jobtype_list_entries">
+        
+        <item>公共管理与社会组织</item>
+       	<item>科研文化卫生教育</item>
+       	<item>金融电力电信</item>
+       	<item>邮政交通运输公用</item>
+       	<item>计算机服务与软件业</item>
+       	<item>体育娱乐</item>
+       	<item>工业商业服务业贸易</item>
+       	<item>其他</item>
+    </string-array>
+    <string-array name="jobtitle_list_entries">
+        
+        <item>高级</item>
+       	<item>中级</item>
+       	<item>初级</item>
+       	<item>无</item>
+    </string-array>
+    <string-array name="jobposition_list_entries">
+        
+        <item>厅局级以上(含)</item>
+       	<item>处级</item>
+       	<item>科级</item>
+       	<item>一般干部</item>
+       	<item>总经理以上(含)</item>
+       	<item>部门经理</item>
+       	<item>职员</item>
+       	<item>其他</item>
+    </string-array>
+    <string-array name="jobposition1_list_entries">
+        
+        <item>干部</item>
+       	<item>士官</item>
+       	<item>职工</item>
+    </string-array>
+    <string-array name="jobposition2_list_entries">
+        
+        <item>厅局级以上(含)</item>
+       	<item>处级</item>
+       	<item>科级</item>
+       	<item>一般干部</item>
+       	<item>其他</item>
+    </string-array>
+    <string-array name="marry_list_entries">
+        <item>未婚</item>
+       	<item>已婚有子女</item>
+       	<item>已婚无子女</item>
+       	<item>其他</item>
+    </string-array>
+    <string-array name="offernum_list_entries">
+        <item>0-1人</item>
+        <item>2-3人</item>
+        <item>4人</item>
+        <item>4人以上</item>
+    </string-array>
+    <string-array name="education_list_entries">
+        <item>研究生及以上</item>
+       	<item>大学本科</item>
+       	<item>大学专科</item>
+       	<item>高中/中专及以下</item>
+    </string-array>
+    <string-array name="stuedu_list_entries">
+        
+        <item>博士</item>
+       	<item>研究生</item>
+       	<item>本科</item>
+       	<item>专科</item>
+    </string-array>
+    <string-array name="house_list_entries">
+        
+        <item>自购无贷款房</item>
+       	<item>自购有贷款房</item>
+       	<item>与父母同住</item>
+       	<item>租用</item>
+       	<item>其他</item>
+    </string-array>
+    <string-array name="other_cardtype_list_entries">
+       	<item>护照</item>
+       	<item>其他</item>
+    </string-array>
+    <string-array name="chs_cardtype_list_entries">
+        <item>身份证</item>
+       	<item>其他</item>
+    </string-array>
+    <string-array name="sex_list_entries">
+        <item>男</item>
+       	<item>女</item>
+    </string-array>
+    <string-array name="relation_list_entries">
+        
+        <item>配偶</item>
+       	<item>亲属</item>
+       	<item>朋友</item>
+       	<item>其他</item>
+    </string-array>
+    <string-array name="stu_relation_list_entries1">
+        
+        <item>父母</item>
+       	<item>其他</item>
+    </string-array>
+    <string-array name="stu_relation_list_entries2">
+        
+        <item>老师</item>
+       	<item>同学</item>
+    </string-array>
+    <string-array name="nomarr_list_entries">
+        
+       	<item>亲属</item>
+       	<item>朋友</item>
+       	<item>其他</item>
+    </string-array>
+    <string-array name="homeaddr_list_entries">
+        
+       	<item>同现住址</item>
+       	<item>另注如下</item>
+    </string-array>
+    <string-array name="tof_list_entries">
+        
+        <item>是</item>
+       	<item>否</item>
+    </string-array>
+    <string-array name="addr_list_entries">
+        
+        <item>现住址</item>
+       	<item>单位地址</item>
+    </string-array>
+    <string-array name="sentway_list_entries">
+        
+        <item>纸质帐单</item>
+       	<item>电子帐单</item>
+       	<item>纸质及电子帐单</item>
+       	<item>彩信账单</item>
+       	<item>纸质及彩信账单</item>
+    </string-array>
+    <string-array name="repay_list_entries">
+        
+        <item>无</item>
+        <item>最低还款额</item>
+       	<item>全额还款</item>
+    </string-array>
+    <string-array name="getcard_list_entries">
+        
+        <item>邮寄到账单地址</item>
+        <item>网点自行领取</item>
+    </string-array>
+    <string-array name="pic_kind_entries">
+        
+        <item>身份证正面</item>
+        <item>身份证反面</item>
+        <item>护照</item>
+        <item>军官证</item>
+        <item>房产证明</item>
+        <item>定期存单证明</item>
+        <item>保险合同证明</item>
+        <item>工资类证明</item>
+        <item>四险类证明</item>
+        <item>公积金类证明</item>
+        <item>工作证</item>
+        <item>名片</item>
+        <item>门禁卡</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="bz_list">
+        <item>全部</item>
+        <item>人民币</item>
+        <item>双币种(美元)</item>
+        <item>双币种(欧元)</item>
+    </string-array>
+    <string-array name="dj_list">
+        <item>全部</item>
+        <item>普卡</item>
+        <item>金卡</item>
+        <item>白金卡</item>
+        <item>钻石卡</item>
+        <item>银联公务金卡</item>
+    </string-array>
+    <string-array name="jg_list">
+        <item>全部</item>
+        <item>银联</item>
+        <item>VISA</item>
+        <item>MasterCard</item>
+    </string-array>
+    <string-array name="money_list">
+        
+        <item>0</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+    </string-array>
+</resources>

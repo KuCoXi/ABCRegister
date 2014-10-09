@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="95"
+   name=""
+   committed-date="2013-11-22T08:32:14.687500Z"
+   url="https://pc-201102141651/svn/android_project/Authentication/trunk/Authentication/src/com/authentication/utils"
+   last-author="wanghengwei"
+   kind="dir"
+   uuid="32046560-117a-9446-93b6-66767021adae"
+   repos="https://pc-201102141651/svn/android_project"
+   revision="102"/>
+<entry
+   committed-rev="74"
+   name="DialogFactory.java"
+   text-time="2013-10-31T07:13:48.000000Z"
+   committed-date="2013-10-31T07:10:15.359375Z"
+   checksum="44c6eac0331d7661c8bbab16bb00d867"
+   last-author="wanghengwei"
+   kind="file"/>
+<entry
+   committed-rev="74"
+   name="ToastUtil.java"
+   text-time="2013-10-31T07:13:48.000000Z"
+   committed-date="2013-10-31T07:10:15.359375Z"
+   checksum="cd8139d6bb9def22da79c531019d6ea3"
+   last-author="wanghengwei"
+   kind="file"/>
+<entry
+   committed-rev="74"
+   name="DataUtils.java"
+   text-time="2013-10-31T07:13:48.000000Z"
+   committed-date="2013-10-31T07:10:15.359375Z"
+   checksum="e95c2985888f462546f4340f5292ba34"
+   last-author="wanghengwei"
+   kind="file"/>
+<entry
+   committed-rev="95"
+   name="FileUtil.java"
+   text-time="2013-11-21T05:26:36.000000Z"
+   committed-date="2013-11-22T08:32:14.687500Z"
+   checksum="1c999d695259f26b285e6377f881a39b"
+   last-author="wanghengwei"
+   kind="file"/>
+</wc-entries>

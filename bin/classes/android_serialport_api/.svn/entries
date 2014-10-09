@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="96"
+   name=""
+   committed-date="2013-11-22T08:32:28.093750Z"
+   url="https://pc-201102141651/svn/android_project/Authentication/trunk/Authentication/src/android_serialport_api"
+   last-author="wanghengwei"
+   kind="dir"
+   uuid="32046560-117a-9446-93b6-66767021adae"
+   repos="https://pc-201102141651/svn/android_project"
+   revision="102"/>
+<entry
+   committed-rev="95"
+   name="SerialPortManager.java"
+   text-time="2013-11-22T07:48:02.000000Z"
+   committed-date="2013-11-22T08:32:14.687500Z"
+   checksum="4e4f5007adf9758fa697942fea0372d4"
+   last-author="wanghengwei"
+   kind="file"/>
+<entry
+   committed-rev="95"
+   name="FingerprintAPI.java"
+   text-time="2013-11-22T08:15:20.000000Z"
+   committed-date="2013-11-22T08:32:14.687500Z"
+   checksum="61e3b07c49100edccd89eb587d7f4a85"
+   last-author="wanghengwei"
+   kind="file"/>
+<entry
+   committed-rev="96"
+   name="M1CardAPI.java"
+   text-time="2013-11-22T07:08:18.000000Z"
+   committed-date="2013-11-22T08:32:28.093750Z"
+   checksum="4591d18b8abe645e12206a52d84b532e"
+   last-author="wanghengwei"
+   kind="file"/>
+<entry
+   committed-rev="71"
+   name="SerialPort.java"
+   text-time="2012-07-10T02:06:50.000000Z"
+   committed-date="2013-10-31T07:04:55.296875Z"
+   checksum="07056d1e1d8ffb06f811cb2d1c25c37c"
+   last-author="wanghengwei"
+   kind="file"/>
+<entry
+   committed-rev="74"
+   name="TypeBCardAPI.java"
+   text-time="2013-10-31T07:13:48.000000Z"
+   committed-date="2013-10-31T07:10:15.359375Z"
+   checksum="1da2d8d0e92d0cfaf330b177154ec3c4"
+   last-author="wanghengwei"
+   kind="file"/>
+<entry
+   committed-rev="95"
+   name="ParseSFZAPI.java"
+   text-time="2013-11-21T06:51:06.000000Z"
+   committed-date="2013-11-22T08:32:14.687500Z"
+   checksum="04471175d060cb5d113b73fea116fe39"
+   last-author="wanghengwei"
+   kind="file"/>
+</wc-entries>

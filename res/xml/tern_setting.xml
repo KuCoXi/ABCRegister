@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="tern_set"
+        android:title="@string/tern_set" >
+        <EditTextPreference
+            android:defaultValue="@string/tern_id_value"
+            android:key="tern_id"
+            android:title="@string/tern_id"
+            android:widgetLayout="@layout/spin" />
+
+        <EditTextPreference
+            android:defaultValue="@string/flowid_value"
+            android:key="flowid_set"
+            android:summary="@string/flowid_set_dialog"
+            android:title="@string/flowid_set"
+            android:widgetLayout="@layout/spin" />
+
+        <ListPreference
+            android:defaultValue="@string/overtime_value"
+            android:dialogTitle="@string/overtime_set"
+            android:entries="@array/overtime_list_entries"
+            android:entryValues="@array/overtime_list_entries_values"
+            android:key="overtime_set"
+            android:title="@string/overtime_set"
+            android:widgetLayout="@layout/spin" />
+        <ListPreference
+            android:defaultValue="@string/recalltime_set"
+            android:dialogTitle="@string/recalltime_set"
+            android:entries="@array/recalltime_list_entries"
+            android:entryValues="@array/recalltime_list_entries_values"
+            android:key="recalltime_set"
+            android:title="@string/recalltime_set"
+            android:widgetLayout="@layout/spin" />
+        <!-- <ListPreference
+            android:defaultValue="@string/readcardtype_value"
+            android:dialogTitle="@string/readcardtype_set_dialog"
+            android:entries="@array/readcardtype_list_entries"
+            android:entryValues="@array/readcardtype_list_entries"
+            android:key="readcardtype_set"
+            android:title="@string/readcardtype_set"
+            android:widgetLayout="@layout/spin" /> -->
+        <Preference
+            android:key="imei_num"
+            android:title="设备序列号" />
+        <Preference
+            android:key="work_time"
+            android:title="本次工作有效期限" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

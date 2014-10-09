@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="gprs_set"
+        android:title="@string/gprs_set" >
+        <EditTextPreference
+            android:defaultValue="192.168.1.1"
+            android:key="gprs_ip_set"
+            android:title="@string/ip_set"
+            android:widgetLayout="@layout/spin" />
+        <EditTextPreference
+            android:defaultValue="9999"
+            android:key="gprs_port_set"
+            android:title="@string/port_set"
+            android:widgetLayout="@layout/spin" />
+        <EditTextPreference
+            android:defaultValue="192.168.1.1"
+            android:key="gprs_apn_set"
+            android:title="APN设置"
+            android:widgetLayout="@layout/spin" />
+        <EditTextPreference
+            android:defaultValue="12345678"
+            android:key="gprs_dialnum_set"
+            android:title="拨号设置"
+            android:widgetLayout="@layout/spin" />
+        <EditTextPreference
+            android:defaultValue="default"
+            android:key="gprs_username_set"
+            android:title="用户名"
+            android:widgetLayout="@layout/spin" />
+        <EditTextPreference
+            android:defaultValue="default"
+            android:key="gprs_pswd_set"
+            android:title="密码"
+            android:widgetLayout="@layout/spin" />
+
+        <Preference
+            android:key="gprs_conn"
+            android:title="连接" />
+        <Preference
+            android:key="check_gprs"
+            android:title="检查" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

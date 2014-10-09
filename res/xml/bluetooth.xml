@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="bluetooth_printer"
+        android:title="蓝牙打印机设置" >
+        <CheckBoxPreference 
+            android:key="open_bluetooth"
+            android:summaryOff="蓝牙已关闭"
+            android:summaryOn="蓝牙已开启"
+            android:title="打开蓝牙"
+            android:widgetLayout="@layout/my_checkbox"/>
+        <Preference
+            android:key="bluetooth_setting"
+            android:title="点击进入蓝牙设置" />
+        <ListPreference
+            android:key="default_printer"
+            android:title="选择默认蓝牙打印机"
+            android:widgetLayout="@layout/spin"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

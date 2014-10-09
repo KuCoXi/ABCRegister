@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mega.abcregister"
+    android:versionCode="3"
+    android:versionName="20140909" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name="com.mega.tools.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" >
+        <activity
+            android:name="com.mega.abcregister.SplashActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.mega.receiver.BootBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" >
+                </action>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.mega.abcregister.HomeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.AboutActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_about"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.LoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/login"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.LogoutActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/logout"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.SettingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_setting"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.EditionActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_edition"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.TaskHomeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_task_home"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.OpLoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_op_login"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.EnterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_enter"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.MsgManageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_msg_manage"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.RePhotoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_process"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.SaleActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_pswd_change"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.MsgPreViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_msg_search"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.KnowledgeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_card_active"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.PrintActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_print"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.DownloadActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_download"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.CardChooseActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_card_choose"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.CustBasicActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_card_choose"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.CustJobActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_card_choose"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.CustRelaActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_card_choose"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.CustAttachActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_card_choose"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.CustOtherActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_card_choose"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.CustMsgActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_card_choose"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.CustPhotoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_card0"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.StuBasicActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_card_choose"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.StuSchoolActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_card_choose"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.StuRelaActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_card_choose"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.CardPreViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_card_detail"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.AgreeMentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_agree_ment"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.CustPreviewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_card_choose"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.AddActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_add"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.ZCActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_zc"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.DeleteActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_delete"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.mega.abcregister.PreEvaActivity"
+            android:label="@string/title_activity_pre_eva"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen" >
+        </activity>
+    </application>
+
+</manifest>

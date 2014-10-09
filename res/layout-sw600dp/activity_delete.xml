@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".DeleteActivity" >
+
+    <TextView
+        android:id="@+id/tvDelTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="25sp"
+        android:text="确认删除？" />
+    <EditText
+        android:id="@+id/etPswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入操作员密码"
+ 		android:layout_below="@id/tvDelTitle"
+ 		android:inputType="textPassword"
+        android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPswd"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <Button
+        	android:id="@+id/btDelNo"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:text="取消"/>
+        <Button
+        	android:id="@+id/btDelYes"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:text="确定"/>
+    </LinearLayout>
+    "
+
+</RelativeLayout>

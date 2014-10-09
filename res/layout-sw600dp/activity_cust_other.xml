@@ -1,0 +1,346 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/home_bg"
+    tools:context=".CustOtherActivity" >
+
+    <Button
+        android:id="@+id/bt_last"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/background_dark"
+        android:textSize="30sp"
+        android:text="上一步" />
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textSize="30sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/background_dark"
+        android:text="下一步" />
+    
+    <!-- 第1行 -->
+	<LinearLayout
+        android:id="@+id/first_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="*是否接受推荐:" />
+            <com.mega.myview.CustomSinnper
+                android:id="@+id/sp_accept_recommend"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:text="@string/sp_hint"/>
+        	<TextView 
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:textSize="20sp"
+        	    android:textColor="#436EEE"
+        	    android:text="(若申请卡种未获批准，是否同意申办其他等级贷记卡)"/>
+    </LinearLayout>
+	
+	<!-- 第2行 -->
+	<LinearLayout
+        android:id="@+id/second_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_row"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="*领卡方式:" />
+            <com.mega.myview.CustomSinnper
+                android:id="@+id/sp_getcard_way"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:text="@string/sp_hint"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="*主卡卡片及密码函邮寄地址:" />
+            <com.mega.myview.CustomSinnper
+                android:id="@+id/sp_cardpswd_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:text="@string/sp_hint"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="*对账单发送方式:" />
+            <com.mega.myview.CustomSinnper
+                android:id="@+id/sp_check_sentway"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:text="@string/sp_hint"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+	<!-- 第3行 -->
+    <LinearLayout
+        android:id="@+id/third_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second_row"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="纸质账单邮寄地址:" />
+
+            <com.mega.myview.CustomSinnper
+                android:id="@+id/sp_paper_sentaddr"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:text="@string/sp_hint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+        	<com.mega.myview.HintEdittext
+                android:id="@+id/et_email"
+                android:layout_width="400dp"
+                android:background="@drawable/sc_input_bg"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="120dp"
+                android:textSize="25sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <!-- 第4行 -->
+    <LinearLayout
+        android:id="@+id/fouth_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/third_row"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="*约定还款方式:" />
+
+            <com.mega.myview.CustomSinnper
+                android:id="@+id/sp_repay_way"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:text="@string/sp_hint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+        	<com.mega.myview.HintEdittext
+                android:id="@+id/et_card_num"
+                android:layout_width="450dp"
+                android:background="@drawable/sc_input_bg"
+                android:inputType="number"
+                android:digits="@string/money_digits"
+                android:paddingLeft="170dp"
+                android:maxLength="19"
+                android:textSize="25sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tvMoney"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:textSize="25sp"
+            	android:text="固定转存金额:" />
+
+        	<com.mega.myview.CustomSinnper
+                android:id="@+id/sp_set_money"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:text="@string/sp_hint" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--  第？行-->
+    <LinearLayout
+        android:id="@+id/no_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/fouth_row"
+        android:layout_weight="1" >
+
+        <com.mega.myview.HintEdittext
+            android:id="@+id/et_op_code"
+            android:layout_width="450dp"
+            android:background="@drawable/sc_input_bg"
+            android:layout_height="wrap_content"
+            android:textColor="#0000FF"
+            android:inputType="number"
+            android:hint="10位营销人员代码"
+            android:paddingLeft="170dp"
+            android:maxLength="10"
+            android:textSize="25sp"
+            android:singleLine="true" />
+    </LinearLayout>
+    <!-- 第5行 -->
+
+    <TextView
+        android:id="@+id/fifth_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/no_row"
+        android:textColor="#436EEE"
+        android:textSize="25sp"
+        android:text="以下信息为系统自动生成" /> 
+        
+    <!-- 第6行 -->
+    <LinearLayout
+        android:id="@+id/sixth_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fifth_row"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <com.mega.myview.HintEdittext
+                android:id="@+id/et_app_code"
+                android:layout_width="wrap_content"
+                android:background="@drawable/sc_input_bg"
+                android:layout_height="wrap_content"
+                android:textColor="#0000FF"
+                android:clickable="false"
+                android:enabled="false"
+                android:paddingLeft="126dp"
+                android:textSize="25sp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <!-- 第7行 -->
+    <LinearLayout
+        android:id="@+id/seventh_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sixth_row"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <com.mega.myview.HintEdittext
+                android:id="@+id/et_dept_code"
+                android:layout_width="wrap_content"
+                android:background="@drawable/sc_input_bg"
+                android:layout_height="wrap_content"
+                android:textColor="#0000FF"
+                android:clickable="false"
+                android:enabled="false"
+                android:paddingLeft="175dp"
+                android:textSize="25sp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <com.mega.myview.HintEdittext
+                android:id="@+id/et_dept_name"
+                android:layout_width="wrap_content"
+                android:background="@drawable/sc_input_bg"
+                android:layout_height="wrap_content"
+                android:textColor="#0000FF"
+                android:clickable="false"
+                android:enabled="false"
+                android:paddingLeft="175dp"
+                android:textSize="25sp"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

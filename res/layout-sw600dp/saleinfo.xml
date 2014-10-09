@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/knowledgeinfo" >
+    <GridView
+        android:id="@+id/gvSaleCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:columnWidth="240dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:listSelector="@drawable/gridview_touch"
+        android:verticalSpacing="5dp" />
+    <TextView
+        android:id="@+id/tvSale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gvSaleCard"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:text="textview"
+        android:textSize="20dp"
+        android:textColor="#8B4726"/>
+</RelativeLayout>

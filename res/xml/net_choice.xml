@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="net_set"
+        android:title="@string/net_set" >
+        <CheckBoxPreference
+            android:key="open_gprs"
+            android:summaryOff="GPRS已关闭"
+            android:summaryOn="GPRS已开启"
+            android:title="GPRS"
+            android:widgetLayout="@layout/my_checkbox" />
+        <CheckBoxPreference
+            android:key="open_tcp"
+            android:summaryOff="TCP/IP已关闭"
+            android:summaryOn="TCP/IP已开启"
+            android:title="TCP/IP"
+            android:widgetLayout="@layout/my_checkbox" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

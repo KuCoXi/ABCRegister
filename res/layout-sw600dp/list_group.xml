@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"                                                                     
+    android:id="@+id/gLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/knowledgelist">
+
+    <ImageView
+          android:id="@+id/ivGroup1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_centerVertical="true"
+          android:paddingLeft="10dp"
+          android:src="@drawable/down"/>
+    <ImageView
+          android:id="@+id/ivGroup2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:paddingRight="10dp"
+          android:src="@drawable/down2"/>
+    <com.mega.myview.MyTextView
+          android:id="@+id/tvGroup"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@id/ivGroup1"
+          android:layout_toLeftOf="@id/ivGroup2"
+          android:paddingTop="5dp"
+          android:paddingBottom="5dp"
+          android:singleLine="true"
+          android:ellipsize="marquee"  
+          android:marqueeRepeatLimit="marquee_forever" 
+          android:scrollHorizontally="true"
+          android:layout_marginLeft="10dp"
+          android:textSize="30dp"
+          android:textColor="#20B2AA"/>
+
+</RelativeLayout> 

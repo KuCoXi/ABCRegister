@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+		<PreferenceCategory
+	        android:key="key_set"
+	        android:title="@string/key_set" >
+	        <EditTextPreference
+	            android:key="manual_set"
+	            android:title="@string/manual_set"
+	            android:defaultValue="abcdefg"
+	            android:widgetLayout="@layout/spin" />
+	    </PreferenceCategory>
+	</PreferenceScreen>

@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg"
+    tools:context=".CardChooseActivity" >
+
+    <TextView
+        android:id="@+id/tvCardTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header"
+        android:focusable="true"
+   		android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="卡种选择"
+        android:textColor="@android:color/background_light"
+        android:textSize="40sp" />
+	<ImageView
+        android:id="@+id/ivSetting"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/settings" />
+    <!-- <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_out" /> -->
+
+    <GridView
+        android:id="@+id/gvCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp"
+        android:layout_marginTop="56dp"
+        android:columnWidth="240dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:listSelector="@drawable/gridview_touch"
+        android:verticalSpacing="5dp" />
+
+    <ImageView
+        android:id="@+id/ivBottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/skin_black" />
+
+    <RelativeLayout
+        android:id="@+id/rlBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" >
+
+        <TextView
+            android:id="@+id/tvJgText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="组织:"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+
+        <Spinner
+            android:id="@+id/spJg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textSize="25sp"
+            android:layout_toRightOf="@id/tvJgText" />
+
+        <TextView
+            android:id="@+id/tvBzText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/spJg"
+            android:text="币种:"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+
+        <Spinner
+            android:id="@+id/spBz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textSize="25sp"
+            android:layout_toRightOf="@id/tvBzText" />
+
+        <TextView
+            android:id="@+id/tvDjText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/spBz"
+            android:text="等级:"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+
+        <Spinner
+            android:id="@+id/spDj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textSize="25sp"
+            android:layout_toRightOf="@id/tvDjText" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/etSearchName"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/sc_input_bg"
+        android:textColor="@color/background_dark"
+        android:textSize="20sp"
+        android:hint="请输入关键词" />
+
+
+</RelativeLayout>

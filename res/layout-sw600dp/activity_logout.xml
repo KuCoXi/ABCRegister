@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".LogoutActivity" >
+	
+    <TextView
+        android:id="@+id/tvLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/header"
+        android:text="@string/logout"
+        android:textColor="@android:color/background_light"
+        android:textSize="40sp" />"
+    <Button 
+        android:id="@+id/btSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textSize="25sp"
+        android:background="@drawable/btn"
+        android:textColor="@color/background_dark"
+        android:text="@string/title_activity_setting"/>
+    
+    <EditText
+        android:id="@+id/etLogoutPswd"
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/sc_input_bg"
+        android:hint="@string/pswd_hint"
+        android:textColor="#141414"
+        android:textSize="30sp"
+        android:inputType="textPassword"
+        android:digits="@string/login_pswd_digits"
+        android:singleLine="true" />
+    <TextView
+        android:id="@+id/tvPswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/etLogoutPswd"
+        android:layout_alignLeft="@id/etLogoutPswd"
+        android:layout_marginTop="40dp"
+        android:text="@string/pswd"
+        android:textColor="@color/background_light"
+        android:textSize="30sp" />
+    <EditText
+        android:id="@+id/etLogoutUserName"
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/tvPswd"
+        android:layout_alignLeft="@id/tvPswd"
+        android:background="@drawable/sc_input_bg"
+        android:hint="@string/userid_hint"
+        android:textColor="#141414"
+        android:textSize="30sp"
+        android:digits="@string/login_username_digits"
+        android:singleLine="true" />
+    <Button
+        android:id="@+id/btLogoutRead"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/etLogoutUserName"
+        android:layout_alignRight="@id/etLogoutUserName"
+        android:layout_alignTop="@id/etLogoutUserName"
+        android:background="@drawable/btn_read"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="读卡" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/etLogoutUserName"
+        android:layout_alignLeft="@id/etLogoutUserName"
+        android:text="@string/userid"
+        android:textColor="@color/background_light"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/llLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etLogoutPswd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btLogoutBack"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:background="@drawable/btn"
+            android:textColor="@color/background_dark"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btLogout"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn"
+            android:text="@string/logout"
+            android:textColor="@color/background_dark"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</RelativeLayout>

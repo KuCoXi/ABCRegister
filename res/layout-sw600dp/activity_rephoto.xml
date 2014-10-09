@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg"
+    tools:context=".ProcessActivity" >
+
+    <TextView
+        android:id="@+id/tvProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header"
+        android:text="手动补件"
+        android:textColor="@android:color/background_light"
+        android:textSize="40sp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+    <ImageView 
+        android:id="@+id/ivSetting"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/settings"/>
+    <EditText
+        android:id="@+id/etProSearchWay"
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:textColor="#141414"
+        android:background="@drawable/sc_input_bg"
+        android:hint="请输入20位申请编号"
+        android:inputType="number"
+        android:maxLength="20"
+        android:textSize="25sp"
+        android:layout_centerInParent="true"/>
+   
+    <LinearLayout
+        android:id="@+id/llSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etProSearchWay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btSearchBack"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:background="@drawable/btn"
+            android:textColor="@color/background_dark"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btSearch"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn"
+            android:text="补件"
+            android:textColor="@color/background_dark"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</RelativeLayout>

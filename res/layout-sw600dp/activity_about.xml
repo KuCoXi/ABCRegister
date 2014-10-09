@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".AboutActivity" >
+
+    <!-- <TextView
+        android:id="@+id/tvAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header"
+        android:text="@string/title_activity_about"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="20sp"
+        android:textColor="@color/background_light"
+        android:text="版权所有：福建麦格数码科技有限公司\n\n联系电话：0591-87728881\n\n手机：18650314184\n\n电子邮箱：support@meganet.com.cn" />
+
+</RelativeLayout>

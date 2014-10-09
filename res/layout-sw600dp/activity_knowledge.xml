@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg"
+    tools:context=".KnowledgeActivity" >
+
+    <TextView
+        android:id="@+id/tvCardActive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header"
+        android:text="@string/title_activity_card_active"
+        android:textColor="@android:color/background_light"
+        android:textSize="40sp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+    <!-- <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCardActive"> -->
+        <ExpandableListView
+        	android:id="@+id/elvKnowledge"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:focusable="true"
+        	android:layout_below="@id/tvCardActive" />
+    <!-- </ScrollView> -->
+    <TextView
+	    android:id="@+id/tvKTip"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/blue"
+        android:textSize="40sp"/>
+
+</RelativeLayout>

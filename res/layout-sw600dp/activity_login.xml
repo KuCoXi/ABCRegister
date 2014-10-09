@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/msg_back"
+    tools:context=".LogoutActivity" >
+
+    <TextView
+        android:id="@+id/tvLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@android:color/background_light"
+        android:textSize="40sp" />
+	<ImageView 
+        android:id="@+id/ivLoginSetting"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/settings"/>
+
+    <com.mega.myview.HintEdittext
+        android:id="@+id/etLoginPswd"
+        android:layout_width="700dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/sc_input_bg"
+        android:textColor="#8B4513"
+        android:textSize="30sp"
+        android:inputType="textPassword"
+        android:textCursorDrawable="@null"
+        android:maxLength="8"
+        android:paddingLeft="100dp"
+        android:digits="@string/login_pswd_digits"
+        android:singleLine="true" />
+    
+    <!-- <TextView
+        android:id="@+id/tvPswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/etLoginPswd"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@id/etLoginPswd"
+        android:text="@string/pswd"
+        android:textColor="@color/background_light"
+        android:textSize="30sp" /> -->
+    <com.mega.myview.HintEdittext
+        android:id="@+id/etLoginUserName"
+        android:layout_width="700dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/etLoginPswd"
+        android:layout_alignLeft="@id/etLoginPswd"
+        android:background="@drawable/sc_input_bg"
+        android:digits="@string/login_username_digits"
+        android:layout_marginBottom="40dp"
+        android:textColor="#8B4513"
+        android:textCursorDrawable="@null"
+        android:textSize="30sp"
+        android:maxLength="18"
+        android:paddingLeft="170dp"
+        android:singleLine="true" />
+    <Button
+        android:id="@+id/btReboot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/etLoginUserName"
+        android:layout_alignRight="@id/etLoginUserName"
+        android:layout_alignTop="@id/etLoginUserName"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:text="重启读卡器" /> 
+
+
+    <LinearLayout
+        android:id="@+id/llLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etLoginPswd"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btLoginBack"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:background="@drawable/btn"
+            android:textColor="@color/background_dark"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btLogin"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:background="@drawable/btn"
+            android:textColor="@color/background_dark"
+            android:textSize="30sp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvTimeTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:background="@drawable/splash_bg"/>
+</RelativeLayout>

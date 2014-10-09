@@ -1,0 +1,469 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/home_bg"
+    tools:context=".CustBasicActivity" >
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="30sp"
+        android:textColor="@color/background_dark"
+        android:text="下一步" />
+
+    <Button
+        android:id="@+id/bt_last"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="30sp"
+        android:textColor="@color/background_dark"
+        android:text="退出" />
+    <Button
+        android:id="@+id/bt_readcard"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="@color/background_dark"
+        android:text="重启读卡器" />
+    <!-- 第一行 -->
+
+    <LinearLayout
+        android:id="@+id/first_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+
+            <com.mega.myview.HintEdittext
+                android:id="@+id/et_chsname"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:background="@drawable/sc_input_bg"
+                android:hint="请读二代证"
+                android:paddingLeft="126dp"
+                android:textSize="25sp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="*性别:" />
+
+            <com.mega.myview.CustomSinnper
+                android:id="@+id/sp_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:text="@string/sp_hint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="*国籍:" />
+
+            <com.mega.myview.CustomSinnper
+                android:id="@+id/sp_nation"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:text="@string/sp_hint" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 第二行 -->
+
+    <LinearLayout
+        android:id="@+id/second_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_row"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <com.mega.myview.HintEdittext
+                android:id="@+id/et_py_lname"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sc_input_bg"
+                android:paddingLeft="105dp"
+                android:textSize="25sp"
+                android:singleLine="true" />
+
+            <com.mega.myview.HintEdittext
+                android:id="@+id/et_py_fname"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sc_input_bg"
+                android:paddingLeft="60dp"
+                android:textSize="25sp"
+                android:singleLine="true" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <com.mega.myview.HintEdittext
+                android:id="@+id/et_birth"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sc_input_bg"
+                android:hint="请读二代证"
+                android:textSize="25sp"
+                android:paddingLeft="126dp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tvEdu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="*在读学历:" />
+
+            <com.mega.myview.CustomSinnper
+                android:id="@+id/sp_education"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:text="@string/sp_hint" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 第三行 -->
+
+    <!-- <TextView
+        android:id="@+id/third_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/second_row"
+        android:text="(字母填写拼音姓名，境外人士依护照英文填写)" /> -->
+
+    <!-- 第四行 -->
+
+    <LinearLayout
+        android:id="@+id/fouth_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second_row"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="*身份证件类型:" />
+
+            <com.mega.myview.CustomSinnper
+                android:id="@+id/sp_cardtype"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:text="@string/sp_hint" />
+
+            <EditText
+                android:id="@+id/et_othertype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="其他证件请注明"
+                android:textSize="25sp"
+                android:background="@drawable/sc_input_bg"
+                android:gravity="center_horizontal"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="*婚姻状况:" />
+
+            <com.mega.myview.CustomSinnper
+                android:id="@+id/sp_marriage"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:text="@string/sp_hint" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 第五行 -->
+
+    <LinearLayout
+        android:id="@+id/fifth_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fouth_row"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <com.mega.myview.HintEdittext
+            android:id="@+id/et_idnum"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sc_input_bg"
+            android:digits="@string/login_username_digits"
+            android:hint="请读二代证"
+            android:maxLength="30"
+            android:textSize="25sp"
+            android:paddingLeft="180dp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sixth_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fifth_row"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="*住宅状况:" />
+
+            <com.mega.myview.CustomSinnper
+                android:id="@+id/sp_house"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:text="@string/sp_hint" />
+
+            <com.mega.myview.HintEdittext
+                android:id="@+id/et_month_back"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sc_input_bg"
+                android:digits="@string/money_digits"
+                android:inputType="number"
+                android:maxLength="8"
+                android:paddingLeft="100dp"
+                android:textSize="25sp"
+                android:singleLine="true" />
+            <TextView
+                android:id="@+id/tv_month_back2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="元," />
+            <com.mega.myview.HintEdittext
+                android:id="@+id/et_house_time"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sc_input_bg"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="25sp"
+                android:paddingLeft="200dp"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="年" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*个人年收入:" />
+
+            <EditText
+                android:id="@+id/et_income"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:digits="@string/money_digits"
+                android:maxLength="8"
+                android:background="@drawable/sc_input_bg"
+                android:gravity="center_horizontal"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="万元" /> -->
+        </LinearLayout>
+    </LinearLayout> 
+
+    <!-- 第七行 -->
+
+    <LinearLayout
+        android:id="@+id/seventh_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sixth_row"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="*现住址:" />
+
+        <com.mega.myview.CustomSinnper
+            android:id="@+id/sp_province"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:text="@string/sp_hint" />
+
+        <com.mega.myview.CustomSinnper
+            android:id="@+id/sp_city"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:text="@string/sp_hint" />
+
+        <com.mega.myview.CustomSinnper
+            android:id="@+id/sp_county"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:text="@string/sp_hint" />
+        <EditText
+            android:id="@+id/et_add_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="在此输入详细住址"
+            android:textSize="25sp"
+            android:background="@drawable/sc_input_bg"
+            android:gravity="center_horizontal"
+            android:singleLine="true" />
+    </LinearLayout>
+    <!-- 第八行 -->
+
+    <LinearLayout
+        android:id="@+id/eigth_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seventh_row"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+        <com.mega.myview.HintEdittext
+                android:id="@+id/et_postcode"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sc_input_bg"
+                android:hint="6位邮编"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingLeft="126dp"
+                android:textSize="25sp"
+                android:singleLine="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="*住宅电话:" />
+        <EditText
+            android:id="@+id/et_house_tel1"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="区号"
+            android:textSize="25sp"
+            android:background="@drawable/sc_input_bg"
+            android:maxLength="4"
+            android:gravity="center_horizontal"
+            android:singleLine="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="-" />
+        <EditText
+            android:id="@+id/et_house_tel2"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="电话号码"
+            android:maxLength="8"
+            android:textSize="25sp"
+            android:background="@drawable/sc_input_bg"
+            android:gravity="center_horizontal"
+            android:singleLine="true" />
+        <com.mega.myview.HintEdittext
+            android:id="@+id/et_phonenum"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sc_input_bg"
+            android:inputType="number"
+            android:paddingLeft="70dp"
+            android:textSize="25sp"
+            android:maxLength="11"
+            android:singleLine="true" />
+    </LinearLayout>
+
+</RelativeLayout>

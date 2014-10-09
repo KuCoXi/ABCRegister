@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/msg_back"
+    tools:context=".TaskHomeActivity" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header"
+        android:text="业务"
+        android:textColor="@android:color/background_light"
+        android:textSize="40sp" />
+     <!-- <Button 
+        android:id="@+id/btSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textSize="25sp"
+        android:background="@drawable/btn"
+        android:textColor="@color/background_dark"
+        android:text="@string/title_activity_setting"/> -->
+     <ImageView 
+         android:id="@+id/ivSetting"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:clickable="true"
+        android:src="@drawable/settings"/>
+     <!-- <ImageView 
+         android:id="@+id/ivLogout"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:clickable="true"
+        android:src="@drawable/login_out"/> -->
+    <!-- <Button
+        android:id="@+id/btLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="25sp"
+        android:background="@drawable/btn"
+        android:textColor="@color/background_dark"
+        android:text="注销" /> -->
+    <GridView
+        android:id="@+id/gvTaskHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:listSelector="@drawable/gridview_touch"
+        android:layout_centerInParent="true"
+        android:verticalSpacing="30dp"
+        android:numColumns="auto_fit" />
+<!-- android:layout_below="@id/tvTitle"
+        android:layout_marginTop="30dp" -->
+</RelativeLayout>
