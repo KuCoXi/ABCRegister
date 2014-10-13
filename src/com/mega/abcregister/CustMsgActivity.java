@@ -41,7 +41,7 @@ public class CustMsgActivity extends ActivityGroup
 	{
 		try
 		{
-			map = XmlTools.readStringXmlOut(MyConstants.CONFIG_PATH+MyConstants.CONFIGFILENAME);
+			map = XmlTools.readStringXmlOut(MyConstants.CONFIG_PATH+MyConstants.getConfigFileName());
 		} catch (IOException e)
 		{
 			// TODO Auto-generated catch block

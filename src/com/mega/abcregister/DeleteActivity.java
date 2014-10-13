@@ -55,7 +55,7 @@ public class DeleteActivity extends Activity
 				String pswdcheck = etPswd.getText().toString();
 				try
 				{
-					pswd = XmlTools.readStringXmlOut(MyConstants.CONFIG_PATH+MyConstants.CONFIGFILENAME).get("aOpenPwd");
+					pswd = XmlTools.readStringXmlOut(MyConstants.CONFIG_PATH+MyConstants.getConfigFileName()).get("aOpenPwd");
 					if (pswd.equals(pswdcheck))
 					{
 						boolean res = FileTools.deleteMsg(MyConstants.WORK_PATH+MyConstants.WORKFILENAME, bundle.getString("idnum"), bundle.getString("appnum"));

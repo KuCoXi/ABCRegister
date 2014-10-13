@@ -94,7 +94,7 @@ public class CardChooseActivity extends Activity
 				Card card = new Card();
 				try
 				{
-					card = XmlTools.getCard(MyConstants.CONFIG_PATH+MyConstants.CONFIGFILENAME, str);
+					card = XmlTools.getCard(MyConstants.CONFIG_PATH+MyConstants.getConfigFileName(), str);
 					int t = MyConstants.spf.getInt(card.getPROD_KIND(), 0);
 					MyConstants.editor.putInt(card.getPROD_KIND(), t+1);
 					MyConstants.editor.commit();
@@ -314,7 +314,7 @@ public class CardChooseActivity extends Activity
 		String keyword = etSearchText.getText().toString().trim();
 		try
 		{
-			myCard = MyConstants.searchCard(XmlTools.readCardTypeXmlOut(MyConstants.CONFIG_PATH+MyConstants.CONFIGFILENAME), bz, jg, dj,keyword);
+			myCard = MyConstants.searchCard(XmlTools.readCardTypeXmlOut(MyConstants.CONFIG_PATH+MyConstants.getConfigFileName()), bz, jg, dj,keyword);
 			Collections.sort(myCard,new SortByTimes());
 		} catch (IOException e)
 		{

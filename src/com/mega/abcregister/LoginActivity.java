@@ -83,8 +83,8 @@ public class LoginActivity extends Activity
 		String startdate = null;
 		try
 		{
-			enddate = XmlTools.readStringXmlOut(MyConstants.CONFIG_PATH + MyConstants.CONFIGFILENAME).get("aEndDate");
-			startdate = XmlTools.readStringXmlOut(MyConstants.CONFIG_PATH + MyConstants.CONFIGFILENAME).get("aStartDate");
+			enddate = XmlTools.readStringXmlOut(MyConstants.CONFIG_PATH + MyConstants.getConfigFileName()).get("aEndDate");
+			startdate = XmlTools.readStringXmlOut(MyConstants.CONFIG_PATH + MyConstants.getConfigFileName()).get("aStartDate");
 		} catch (IOException e)
 		{
 			// TODO Auto-generated catch block
@@ -245,9 +245,9 @@ public class LoginActivity extends Activity
 				String starttime = null;
 				try
 				{
-					id = XmlTools.readStringXmlOut(MyConstants.CONFIG_PATH + MyConstants.CONFIGFILENAME).get("aOpenId");
-					pswd = XmlTools.readStringXmlOut(MyConstants.CONFIG_PATH + MyConstants.CONFIGFILENAME).get("aOpenPwd");
-					starttime = XmlTools.readStringXmlOut(MyConstants.CONFIG_PATH + MyConstants.CONFIGFILENAME).get("aStartDate");
+					id = XmlTools.readStringXmlOut(MyConstants.CONFIG_PATH + MyConstants.getConfigFileName()).get("aOpenId");
+					pswd = XmlTools.readStringXmlOut(MyConstants.CONFIG_PATH + MyConstants.getConfigFileName()).get("aOpenPwd");
+					starttime = XmlTools.readStringXmlOut(MyConstants.CONFIG_PATH + MyConstants.getConfigFileName()).get("aStartDate");
 				} catch (IOException e)
 				{
 					// TODO Auto-generated catch block

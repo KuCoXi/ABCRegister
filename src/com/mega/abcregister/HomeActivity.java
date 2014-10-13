@@ -133,8 +133,8 @@ public class HomeActivity extends Activity
 				Intent intent = new Intent();
 				if (str.equals("签到"))
 				{
-					File file = new File(MyConstants.CONFIG_PATH+MyConstants.CONFIGFILENAME);
-					System.out.println("配置文件名："+MyConstants.CONFIG_PATH+MyConstants.CONFIGFILENAME);
+					File file = new File(MyConstants.CONFIG_PATH+MyConstants.getConfigFileName());
+					System.out.println("配置文件名："+MyConstants.CONFIG_PATH+MyConstants.getConfigFileName());
 					if (!file.exists()||file.length()==0)
 					{
 						AlertDialog.Builder builder = new AlertDialog.Builder(HomeActivity.this);

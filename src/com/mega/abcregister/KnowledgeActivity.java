@@ -54,7 +54,7 @@ public class KnowledgeActivity extends Activity
 		tvTip = (TextView) findViewById(R.id.tvKTip);
 		try
 		{
-			knowledges = XmlTools.readKnowledgeXmlOut(MyConstants.CONFIG_PATH+MyConstants.CONFIGFILENAME);
+			knowledges = XmlTools.readKnowledgeXmlOut(MyConstants.CONFIG_PATH+MyConstants.getConfigFileName());
 			if (knowledges.size()!=0)
 			{
 				String[] group = new String[knowledges.size()];

@@ -111,8 +111,8 @@ public class TernSettingFragment extends PreferenceFragment implements OnSharedP
 		String endTime = null;
 		try
 		{
-			startTime = XmlTools.readStringXmlOut(MyConstants.CONFIG_PATH+MyConstants.CONFIGFILENAME).get("aStartDate");
-			endTime = XmlTools.readStringXmlOut(MyConstants.CONFIG_PATH+MyConstants.CONFIGFILENAME).get("aEndDate");
+			startTime = XmlTools.readStringXmlOut(MyConstants.CONFIG_PATH+MyConstants.getConfigFileName()).get("aStartDate");
+			endTime = XmlTools.readStringXmlOut(MyConstants.CONFIG_PATH+MyConstants.getConfigFileName()).get("aEndDate");
 		} catch (IOException e)
 		{
 			// TODO Auto-generated catch block

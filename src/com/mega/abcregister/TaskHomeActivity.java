@@ -120,7 +120,7 @@ public class TaskHomeActivity extends Activity
 						List<Card> list = new ArrayList<Card>();
 						try
 						{
-							list = XmlTools.readCardTypeXmlOut(MyConstants.CONFIG_PATH+MyConstants.CONFIGFILENAME);
+							list = XmlTools.readCardTypeXmlOut(MyConstants.CONFIG_PATH+MyConstants.getConfigFileName());
 							bundle.putSerializable("card", (Serializable)list);
 							intent.putExtras(bundle);
 							intent.setClass(TaskHomeActivity.this, CardChooseActivity.class);

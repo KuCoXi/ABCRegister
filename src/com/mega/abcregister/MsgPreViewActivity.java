@@ -58,7 +58,7 @@ public class MsgPreViewActivity extends Activity
 		tvTip = (TextView) findViewById(R.id.tvTip);
 		try
 		{
-			MyConstants.WORKFILENAME = XmlTools.readStringXmlOut(MyConstants.CONFIG_PATH + MyConstants.CONFIGFILENAME).get("aFileName");
+			MyConstants.WORKFILENAME = XmlTools.readStringXmlOut(MyConstants.CONFIG_PATH + MyConstants.getConfigFileName()).get("aFileName");
 		} catch (IOException e)
 		{
 			// TODO Auto-generated catch block

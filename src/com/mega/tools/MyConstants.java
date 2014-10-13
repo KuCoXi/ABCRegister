@@ -65,7 +65,7 @@ public class MyConstants
 	public static final String WORK_PATH = Environment.getExternalStorageDirectory() + "/MEGA/WORK/";
 	public static final String CARD_IMG_PATH = Environment.getExternalStorageDirectory()+"/MEGA/CARD_IMG/";
 	public static String WORKFILENAME;
-	public static final String CONFIGFILENAME = getIMEI()/*"111111111111111"*/ + ".dat";
+//	public static String CONFIGFILENAME;
 	public static final String DBFILENAME = "auto_data.db";
 	public static String WORKKEY = "11111111";
 	public static SQLiteDatabase SDB = null;// 数据库对象
@@ -192,6 +192,7 @@ public class MyConstants
 	{
 		spf = PreferenceManager.getDefaultSharedPreferences(MyApplication.getInstance().getApplicationContext());
 		editor = spf.edit();
+//		CONFIGFILENAME = getIMEI() + ".dat";
 	}
 
 	/**
@@ -233,7 +234,7 @@ public class MyConstants
 		List<MyElement> list = new ArrayList<MyElement>();
 		try
 		{
-			WORKFILENAME = XmlTools.readStringXmlOut(CONFIG_PATH + CONFIGFILENAME).get("aFileName");
+			WORKFILENAME = XmlTools.readStringXmlOut(CONFIG_PATH + getConfigFileName()).get("aFileName");
 		} catch (IOException e)
 		{
 			// TODO Auto-generated catch block
@@ -392,7 +393,7 @@ public class MyConstants
 			String uid = "";
 			try
 			{
-				uid = XmlTools.readStringXmlOut(CONFIG_PATH + CONFIGFILENAME).get("aOpenId");
+				uid = XmlTools.readStringXmlOut(CONFIG_PATH + getConfigFileName()).get("aOpenId");
 			} catch (IOException e)
 			{
 				// TODO Auto-generated catch block
@@ -1672,6 +1673,16 @@ public class MyConstants
 			return tm.getDeviceId();
 		}
 		return "";
+	}
+	
+	public static String getConfigFileName()
+	{
+		TelephonyManager tm = (TelephonyManager) MyApplication.getInstance().getSystemService(Context.TELEPHONY_SERVICE);
+		if (tm.getDeviceId() != null)
+		{
+			return tm.getDeviceId()+".dat";
+		}
+		return "000000000000000.dat";
 	}
 	
 	public static int getVersionCode()

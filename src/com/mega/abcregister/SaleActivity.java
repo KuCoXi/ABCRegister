@@ -56,7 +56,7 @@ public class SaleActivity extends Activity
 		tvTip = (TextView) findViewById(R.id.tvTip);
 		try
 		{
-			sales = XmlTools.readSaleXmlOut(MyConstants.CONFIG_PATH+MyConstants.CONFIGFILENAME);
+			sales = XmlTools.readSaleXmlOut(MyConstants.CONFIG_PATH+MyConstants.getConfigFileName());
 			if (sales.size()!=0)
 			{
 				String[] group = new String[sales.size()];
@@ -88,7 +88,7 @@ public class SaleActivity extends Activity
 							String picName = cards.get(j).getPROD_KIND();
 							System.out.println("¿¨Æ¬´úÂë£º"+picName);
 							HashMap<String, Object> map = new HashMap<String, Object>();
-							List<Card> cardData = XmlTools.readCardTypeXmlOut(MyConstants.CONFIG_PATH+MyConstants.CONFIGFILENAME);
+							List<Card> cardData = XmlTools.readCardTypeXmlOut(MyConstants.CONFIG_PATH+MyConstants.getConfigFileName());
 							Card card = null;
 							for (Card card2 : cardData)
 							{
@@ -129,7 +129,7 @@ public class SaleActivity extends Activity
 								Card card = new Card();
 								try
 								{
-									card = XmlTools.getCard(MyConstants.CONFIG_PATH+MyConstants.CONFIGFILENAME, str);
+									card = XmlTools.getCard(MyConstants.CONFIG_PATH+MyConstants.getConfigFileName(), str);
 									System.out.println(str);
 									System.out.println(card.getCardDetails());
 								} catch (IOException e)
