@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mega.abcregister"
     android:versionCode="3"
-    android:versionName="20141011" >
+    android:versionName="20141024" >
 
     <uses-sdk
         android:minSdkVersion="15"
